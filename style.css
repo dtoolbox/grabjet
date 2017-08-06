@@ -1,0 +1,470 @@
+/*
+Theme Name: GrabJet Theme
+Description: GrabJet Examination 
+Version: 1.0
+Author: Reynald Dimatulac
+*/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+	background-color: #fff; 
+	background-image: url(img/GrabJet-bg.png); 
+	background-repeat: no-repeat; 
+	background-position: center top; 
+	background-size: 100% auto;
+	padding-top: 20px;
+	-webkit-font-smoothing: antialiased;
+	font-size: 16px;
+	margin-bottom: 60px;
+}
+
+.navbar {
+  	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-nav {
+    margin: 0 -15px;
+}
+
+.navbar-brand img {
+	max-height: 50px;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.navbar-default {
+    background: none;
+    border: none;
+}
+
+.booking-wrapper {
+	width: 44%;
+	margin: 0 auto;
+}
+
+.booking-wrapper img#airplane {
+	width: 74%;
+	height: auto;
+	margin: 150px auto;
+}
+
+.threecolums {
+	width: 70%;
+	margin: 125px auto;
+}
+
+.threecolums  > div > div {
+	text-align: center;
+}
+
+.threecolums i.fa {
+	font-size: 50px;
+	color: #008d33;
+	margin: 40px 0;
+}
+
+.multiselect-native-select button.btn {
+	text-align: left;
+}
+
+
+.multiselect-native-select button.btn .caret {
+	float: right;
+	border: none !important;
+	margin-right: 12px;
+}
+
+.multiselect-native-select button.btn .caret:after {
+    content:"\f078 ";
+    font-family: FontAwesome;
+    pointer-events: none;    
+}
+
+.multiselect-container.dropdown-menu {
+	width: 100%;
+}
+
+.multiselect-native-select .dropdown-menu>li>a {
+    padding: 3px 0px;
+}
+
+#bookingbox {
+	background: #fff;
+	border: 1px solid #e7ecef;
+	margin-bottom: 80px;
+	border-radius: 4px;
+}
+
+#bookingbox fieldset {
+  margin: 0 0 3rem;
+  padding: 0;
+  border: none;
+}
+
+#bookingbox .form-group {
+  	position: relative;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#bookingbox .form-inline > .form-group,
+#bookingbox .form-inline > .btn {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+#bookingbox .form-help {
+  margin-top: 0.125rem;
+  margin-left: 0.125rem;
+  color: #b3b3b3;
+  font-size: 0.8rem;
+}
+
+#bookingbox .form-radio .form-help, 
+#bookingbox .form-group .form-help {
+  position: absolute;
+  width: 100%;
+}
+
+#bookingbox .form-group input {
+  height: 20px;
+}
+
+#bookingbox .form-group textarea {
+  resize: none;
+}
+
+#bookingbox .form-group .control-label {
+  position: absolute;
+  top: 0.25rem;
+  pointer-events: none;
+  padding-left: 0.125rem;
+  z-index: 1;
+  color: #b3b3b3;
+  font-size: 1rem;
+  font-weight: normal;
+  -webkit-transition: all 0.28s ease;
+  transition: all 0.28s ease;
+}
+
+#bookingbox .form-group .bar {
+  position: relative;
+  border-bottom: 0.0625rem solid #999;
+  display: block;
+}
+
+#bookingbox .form-group .bar::before {
+  content: '';
+  height: 0.125rem;
+  width: 0;
+  left: 50%;
+  bottom: -0.0625rem;
+  position: absolute;
+  background: #337ab7;
+  -webkit-transition: left 0.28s ease, width 0.28s ease;
+  transition: left 0.28s ease, width 0.28s ease;
+  z-index: 2;
+}
+
+#bookingbox .form-group input,
+#bookingbox .form-group textarea {
+  display: block;
+  background: none;
+  padding: 0.125rem 0.125rem 0.0625rem;
+  font-size: 15px;
+  border-width: 0;
+  border-color: transparent;
+  line-height: 1.9;
+  width: 100%;
+  color: transparent;
+  -webkit-transition: all 0.28s ease;
+  transition: all 0.28s ease;
+  box-shadow: none;
+}
+
+#bookingbox .form-group input[type="file"] {
+  line-height: 1;
+}
+
+#bookingbox .form-group input[type="file"] ~ .bar {
+  display: none;
+}
+
+#bookingbox .form-group input:focus,
+#bookingbox .form-group input:valid,
+#bookingbox .form-group input.form-file,
+#bookingbox .form-group input.has-value,
+#bookingbox .form-group textarea:focus,
+#bookingbox .form-group textarea:valid,
+#bookingbox .form-group textarea.form-file,
+#bookingbox .form-group textarea.has-value {
+  color: #333;
+}
+
+#bookingbox .form-group input:focus ~ .control-label,
+#bookingbox .form-group input:valid ~ .control-label,
+#bookingbox .form-group input.form-file ~ .control-label,
+#bookingbox .form-group input.has-value ~ .control-label,
+#bookingbox .form-group textarea:focus ~ .control-label,
+#bookingbox .form-group textarea:valid ~ .control-label,
+#bookingbox .form-group textarea.form-file ~ .control-label,
+#bookingbox .form-group textarea.has-value ~ .control-label {
+  font-size: 10px;
+  color: gray;
+  top: -15px;
+  left: 0;
+}
+
+#bookingbox .form-group input:focus,
+#bookingbox .form-group textarea:focus {
+  outline: none;
+}
+
+#bookingbox .form-group input:focus ~ .control-label,
+#bookingbox .form-group textarea:focus ~ .control-label {
+  color: #b3b3b3;
+}
+
+#bookingbox .form-group input:focus ~ .bar::before,
+#bookingbox .form-group textarea:focus ~ .bar::before {
+  width: 100%;
+  left: 0;
+}
+
+
+
+#bookingbox .has-error .legend.legend, 
+#bookingbox .has-error.form-group .control-label.control-label {
+  color: #d9534f;
+}
+
+#bookingbox .has-error.form-group .form-help,
+#bookingbox .has-error.form-group .helper, .has-error.checkbox .form-help,
+#bookingbox .has-error.checkbox .helper, .has-error.radio .form-help,
+#bookingbox .has-error.radio .helper, .has-error.form-radio .form-help,
+#bookingbox .has-error.form-radio .helper {
+  color: #d9534f;
+}
+
+#bookingbox .has-error .bar::before {
+  background: #d9534f;
+  left: 0;
+  width: 100%;
+}
+
+#pickup,
+#dropoff {
+	border-bottom: 1px solid #cccccc;
+}
+
+.inner-blue {
+	padding: 1px 17px;
+    margin-top: 15px;
+    margin-left: 3px;
+    border-left: 3px solid #3366cc;
+}
+
+.outer-blue {
+    border-left: 3px solid #3366cc;
+    margin: 0 20px;
+}
+
+
+.outer-red {
+    border-left: 3px solid #ff3333;
+    margin: 0 20px;
+}
+
+.inner-red {
+	padding: 1px 17px;
+    margin-bottom: 15px;
+    margin-left: 3px;
+    border-left: 3px solid #ff3333;
+}
+
+.thirdrow {
+	background: #f7f9fb;
+}	
+
+.thirdrowcolumn {
+	width: 50%;
+	float: left;
+	padding: 10px 20px;
+	    
+}
+
+.thirdrowcolumn:first-child { 
+	border-right: 1px solid #ccc;
+}
+
+.btn-grab {
+	background: #33c066;
+	color: #fff;
+}
+
+.thirdrowcolumn .btn-default {
+    background-color: transparent;
+    border: none;
+}
+
+.thirdrowcolumn open>.dropdown-toggle.btn-default:focus, 
+.thirdrowcolumn .open>.dropdown-toggle.btn-default:hover {
+    background-color: transparent;
+    border: none;
+}
+
+.thirdrowcolumn .btn-group.open .dropdown-toggle {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.thirdrowcolumn input#datetimepicker {
+	text-align: center;
+}
+
+.thirdrowcolumn .form-control {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #cfd8df;
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+#grabjet-add-ons {
+	opacity: 0;
+}
+
+/* Large Screens */
+@media screen and (min-width: 1281px) {
+
+body {
+	background-position: center -240px;
+}	
+	
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) and (max-width: 1280px) {
+
+.booking-wrapper img#airplane {
+    margin: 95px auto;
+}
+
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Mobile */
+@media screen and (min-width: 200px) and (max-width: 767px) {
+
+.booking-wrapper {
+	width: auto;
+	margin: 15px;
+}
+
+.booking-wrapper img#airplane {
+	margin: 10px auto;
+}
+
+.navbar-default .navbar-collapse, 
+.navbar-default .navbar-form {
+    background-color: #fff;
+    border: 1px solid #33c066;
+    margin-top: 20px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    border: 1px solid #33c066; 
+    color: #33c066;
+}
+
+.navbar-default .navbar-nav>li>a:focus, 
+.navbar-default .navbar-nav>li>a:hover {
+    color: #FFF;
+    background-color: #33c066;
+}
+
+.navbar-default .navbar-toggle:focus, 
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  transition: 300ms ease-in-out;
+  background-color: #fff;
+  position: relative;
+  width: 24px;
+  height: 2px;
+}
+
+.navbar-default .navbar-toggle:focus {
+  background: none !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar:last-child {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: -7px;
+}
+
+.navbar-default .navbar-toggle .icon-bar:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 5px;
+}
+
+.navbar-default .navbar-toggle .icon-bar:nth-child(3) {
+  opacity: 0;
+}
+
+.navbar-default .navbar-toggle.collapsed .icon-bar {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  top: 0;
+  opacity: 1;
+}
+
+.thirdrowcolumn {
+    padding: 10px 0px;
+}
+
+.thirdrowcolumn .multiselect-container>li>a>label {
+    padding: 0px 0px 0px 25px;
+	font-size: 13px;
+}
+
+
+
+}
+
